@@ -3,7 +3,7 @@
 ## Explications et modifications nécessaires
 
 ### Provider Configuration:
-pm_api_url: Remplacez <votre-serveur-proxmox> par l'adresse IP ou le nom de domaine de votre serveur Proxmox. \n
+pm_api_url: Remplacez <votre-serveur-proxmox> par l'adresse IP ou le nom de domaine de votre serveur Proxmox. </br>
 pm_user et pm_password: Remplacez par vos identifiants de connexion Proxmox.
 pm_tls_insecure: Mettez à true si vous utilisez un certificat auto-signé.
 
