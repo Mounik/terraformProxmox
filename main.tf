@@ -8,17 +8,17 @@ terraform {
 }
 
 provider "proxmox" {
-  pm_api_url = "https://192.168.1.100:8006/api2/json"
+  pm_api_url = "https://<votre-serveur-proxmox>:8006/api2/json"
   pm_user = "root@pam"
-  pm_password = "2Ksable$"
+  pm_password = "votre-mot-de-passe"
   pm_tls_insecure = true
 }
 
-resource "proxmox_vm_qemu" "UbuntuVM" {
-  name = "UbuntuVM"
-  target_node = "pmx01" # Le nom de votre nœud Proxmox
+resource "proxmox_vm_qemu" "ma-vm" {
+  name = "ma-vm"
+  target_node = "pve" # Le nom de votre nœud Proxmox
 
-  clone = "UbuntuServer" # Le nom d'un template VM existant
+  clone = "mon-template" # Le nom d'un template VM existant
 
   # Configuration réseau
   network {
