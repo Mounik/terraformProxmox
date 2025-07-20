@@ -96,14 +96,3 @@ module "vm2" {
 ## Références
 - [Provider Telmate/Proxmox](https://registry.terraform.io/providers/Telmate/proxmox/latest/docs)
 - [Documentation Proxmox](https://pve.proxmox.com/wiki/Main_Page)
-  eth0:
-    addresses:
-      - 192.168.1.100/24
-    gateway4: 192.168.1.1
-    nameservers:
-      addresses: [8.8.8.8, 8.8.4.4]
-```
-
-## Références
-- [Provider Telmate/Proxmox](https://registry.terraform.io/providers/Telmate/proxmox/latest/docs)
-- [Documentation Proxmox](https://pve.proxmox.com/wiki/Main_Page)
